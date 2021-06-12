@@ -1,0 +1,108 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+html,body {
+	height: 100%;
+	background: #fbf9fa;
+}
+.grid {
+	float: right;
+	display: block;
+	width: 50%;
+	padding-top: 20px;
+}
+.grid h2{padding: 30px 0 20px 0;}
+.downloadpage {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	margin-top: -230px;
+}
+.container {
+	width: 960px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.linebtn{
+	width: 100%;
+	display: block;
+	padding: 12px 0;
+	border-radius: 25px;
+	color: #E3E9FB;
+	background: linear-gradient(90deg, #539CFF, #185AE8);
+	margin-top: 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.linebtn:active{background-color: #fee;}
+.linebtn img{
+	vertical-align: sub;
+	padding-right: 5px;
+}
+.turn {
+	float: right;
+	display: block;
+	width: 50%;
+	padding-top: 20px;
+	padding-bottom: 2em;
+	margin-top: -260px;
+}
+.prompt {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.prompt img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80vw;
+}
+
+/* Tablet/Small Laptops */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+	.container {
+		width: 60%;
+	}
+	.grid { width: 100%; }
+	.downloadpage {
+		position: relative;
+		top: 50px;
+		margin-top: 0;
+	}
+	.turn {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+	.container {
+		width: 90%;
+	}
+	.grid {
+		width:100%;
+	}
+	.downloadpage {
+		position: relative;
+		top: 0;
+		margin-top: 0;
+	}
+	.turn {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
